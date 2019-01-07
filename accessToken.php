@@ -14,17 +14,11 @@ $identity = isset($_GET["identity"]) ? $_GET["identity"] : NULL;
 if (!isset($identity) || empty($identity)) {
   $identity = isset($_POST["identity"]) ? $_POST["identity"] : "alice";
 }
-    echo "account SID";
     echo $ACCOUNT_SID
-    echo "api key";
     echo $API_KEY
-    echo "api key secret";
     echo $API_KEY_SECRET
-    echo "identity";
     echo $identity
-    echo "app SID";
     echo $APP_SID
-    echo "push SID";
     echo $PUSH_CREDENTIAL_SID
 // Create access token, which we will serialize and send to the client
 $token = new AccessToken($ACCOUNT_SID, 
