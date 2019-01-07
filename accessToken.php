@@ -16,10 +16,7 @@ if (!isset($identity) || empty($identity)) {
 }
     echo $ACCOUNT_SID
     echo $API_KEY
-    echo $API_KEY_SECRET
-    echo $identity
-    echo $APP_SID
-    echo $PUSH_CREDENTIAL_SID
+   
 // Create access token, which we will serialize and send to the client
 $token = new AccessToken($ACCOUNT_SID, 
                          $API_KEY, 
