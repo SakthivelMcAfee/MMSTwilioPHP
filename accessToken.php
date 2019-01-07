@@ -15,8 +15,7 @@ if (!isset($identity) || empty($identity)) {
   $identity = isset($_POST["identity"]) ? $_POST["identity"] : "alice";
 }
     echo $ACCOUNT_SID
-    echo $API_KEY
-   
+
 // Create access token, which we will serialize and send to the client
 $token = new AccessToken($ACCOUNT_SID, 
                          $API_KEY, 
