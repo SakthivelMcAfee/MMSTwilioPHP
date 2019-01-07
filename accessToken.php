@@ -7,7 +7,7 @@ include('./config.php');
 use Twilio\Jwt\AccessToken;
 use Twilio\Jwt\Grants\VoiceGrant;
 
-    echo "Test log inside access token"
+    echo "Test log inside access token";
 // Use identity and room from query string if provided
     echo "Identity = ".$_GET["identity"];
 $identity = isset($_GET["identity"]) ? $_GET["identity"] : NULL;
