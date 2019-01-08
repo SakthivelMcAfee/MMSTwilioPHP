@@ -18,11 +18,11 @@ if (!isset($to) || empty($to)) {
 /*
  * Use a valid Twilio number by adding to your account via https://www.twilio.com/console/phone-numbers/verified
  */
-$callerNumber = '8098536743';
+$callerNumber = '+918095836743';
 
 $response = new Twilio\Twiml();
 if (!isset($to) || empty($to)) {
-  $response->say('Congratulations! You have just made your first call! Good bye.Sakthi');
+  $response->say('Congratulations! You have just made your first call! Good bye.');
 } else if (is_numeric($to)) {
   $dial = $response->dial(
     array(
