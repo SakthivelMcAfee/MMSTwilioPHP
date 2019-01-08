@@ -9,6 +9,7 @@
 include('./vendor/autoload.php');
 include('./config.php');
 
+    echo "Inside make call";
 $callerId = 'client:quick_start';
 $to = isset($_POST["to"]) ? $_POST["to"] : "";
 if (!isset($to) || empty($to)) {
