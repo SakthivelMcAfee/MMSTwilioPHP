@@ -14,61 +14,7 @@ $identity = isset($_GET["identity"]) ? $_GET["identity"] : NULL;
 if (!isset($identity) || empty($identity)) {
   $identity = isset($_POST["identity"]) ? $_POST["identity"] : "alice";
 }
-    
-//
-//    if (!isset($ACCOUNT_SID)) {
-//        echo "account ID not set";
-//    }else {
-//        echo "account ID  set";
-//    }
-//
-//    if (!isset($API_KEY)) {
-//        echo "api key not set";
-//
-//    }else {
-//        echo "api key  set";
-//
-//    }
-//
-//    if (!isset($API_KEY_SECRET)) {
-//        echo "api key secret not set";
-//
-//    }else {
-//        echo "api key secret  set";
-//
-//    }
-//
-//    if (!isset($identity)) {
-//        echo "identity not set";
-//
-//    }else {
-//        echo "identity set";
-//
-//    }
-//
-//    if (!isset($APP_SID)) {
-//        echo "app SID not set";
-//
-//    }else {
-//        echo "app SID  set";
-//
-//    }
-//
-//    if (!isset($PUSH_CREDENTIAL_SID)) {
-//        echo "push SID not set";
-//
-//    }else {
-//        echo "push SID set";
-//
-//    }
-
-//    echo $ACCOUNT_SID
-//    echo $API_KEY
-//    echo $API_KEY_SECRET
-//    echo $identity
-//    echo $APP_SID
-//    echo $PUSH_CREDENTIAL_SID
-    
+ 
 // Create access token, which we will serialize and send to the client
 $token = new AccessToken($ACCOUNT_SID, 
                          $API_KEY, 
