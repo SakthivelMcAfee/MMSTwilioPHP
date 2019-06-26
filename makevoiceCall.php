@@ -28,6 +28,7 @@ if (!isset($to) || empty($to)) {
    // if (!isset($to) || empty($to)){
     $to = $DESTINATION_ID;
    // }
+    $response->say('Welcome');
 
 /*
  * Use a valid Twilio number by adding to your account via https://www.twilio.com/console/phone-numbers/verified
