@@ -9,15 +9,8 @@
 include('./vendor/autoload.php');
 include('./config.php');
 
-function debug_to_console( $data ) {
-        $output = $data;
-        if ( is_array( $output ) )
-            $output = implode( ',', $output);
-        
-        echo "<script>console.log( 'Debug Objects: " . $output . "' );</script>";
-}
-$requestBody = file_get_contents('php://input');
-$requestBody = json_decode($requestBody) or die("Could not decode JSON");
+
+
 
 $callerId = 'client:quick_start';
 $to = isset($_POST["to"]) ? $_POST["to"] : "";
@@ -28,7 +21,6 @@ if (!isset($to) || empty($to)) {
    // if (!isset($to) || empty($to)){
     $to = $DESTINATION_ID;
    // }
-    $response->say('Welcome');
 
 /*
  * Use a valid Twilio number by adding to your account via https://www.twilio.com/console/phone-numbers/verified
@@ -52,6 +44,4 @@ if (!isset($to) || empty($to)) {
   $dial->client($to);
 }
 
-debug_to_console( "Test" );
-debug_to_console( $requestBody );
 print $response;
