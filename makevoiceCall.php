@@ -35,7 +35,7 @@ if (!isset($to) || empty($to)) {
     array(
   	  'callerId' => $callerNumber
   	));
-    $dial->number($to);
+    $dial->number($to, ['sendDigits' => 'wwwwwwwwwwwwwwwwwwwwwwwwwwwwww8482641729']);
 } else {
   $dial = $response->dial(
     array(
